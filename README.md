@@ -1,3 +1,3 @@
 # sourabh3339.github.io
 
-Modest website design, responsive, works smoothly for mobile devices 
+Stylish website design with nice effects 
