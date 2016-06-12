@@ -1,0 +1,70 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color:black;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    background-color: rgb(1, 1, 1);
+    width: 100%;
+    justify-content: center;
+    transform:rotateZ(20deg);
+  
+}
+
+#poster-one {
+    position: relative;
+    background-color: cyan;
+    width: 34.375%;
+    z-index: 9;
+    opacity: 0.6;
+    transition: width 0.5s;
+    background-image: url(https://sunshinetomorrow.files.wordpress.com/2012/01/new-picture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+background-position-x:25%;
+}
+
+#poster-one:hover {
+    width: 70%;
+    left: 23px;
+    cursor: pointer;
+}
+
+#poster-two {
+    position: relative;
+    z-index: 8;
+    width: 37.5%;
+    margin-left: -3.12%;
+    background-color: grey;
+    transition: width 0.5s;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/82/cb/9b/82cb9b7f3e06dc4f4728150fced46098.jpg);
+}
+
+#poster-two:hover {
+    width: 70%;
+    cursor: pointer;
+}
+
+#poster-three {
+    position: relative;
+    z-index: 10;
+    margin-left: -3.12%;
+    width: 28.12%;
+    background-color: green;
+    opacity: 0.5;
+    transition: width 0.5s;
+    background-image: url(http://cdn.gobankingrates.com/wp-content/uploads/Tony-Stark-net-worth-1024x593.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:25%; 
+}
+
+#poster-three:hover {
+    width: 70%;
+    cursor: pointer;
+}

@@ -1,0 +1,196 @@
+/* Styles go here */
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  text-align:center;
+  padding: 0;
+  margin:0;
+}
+.better{
+  display:inline-block;
+  height:150px;
+  float: left;
+  /*background-color:grey;*/
+  width:20%;
+  overflow:hidden;
+  background-repeat: no-repeat;
+  background-position: -30px -48px;
+  
+}
+
+.better div{
+  position:relative;
+  top:0;left:-100%;
+  height:100%;
+  background-color:white;
+  /*transition:left 0.3s,top 0.3s;*/
+}
+
+
+/* left */
+.animate-left-in{
+  animation-name:left-in;
+  animation-duration:0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes left-in{
+  from{left:-100%}to{left:0%}
+}
+.seenleft-in{
+  left: 0% !important;
+}
+.animate-left-out{
+  animation-name:left-out;
+  animation-duration:0.3s;
+animation-fill-mode: forwards;
+  
+}
+@keyframes left-out{
+  from{left:0%}to{left:100%}
+}
+.seenleft-out{
+  left: 100% !important;
+}
+/* ----left---- */
+
+
+/* right */
+.animate-right-in{
+  animation-name:right-in;
+  animation-duration:0.3s;
+animation-fill-mode: forwards;
+  
+}
+@keyframes right-in{
+  from{left:100%;top:0%}to{left:0%;top:0%}
+}
+.seenright-in{
+  left: 0% !important;
+  top: 0% !important;
+}
+
+
+
+.animate-right-out{
+  animation-name:right-out;
+  animation-duration:0.3s;
+animation-fill-mode: forwards;
+  
+}
+@keyframes right-out{
+  from{left:0%;top:0%}to{left:-100%;top:0%}
+}
+.seenright-out{
+  left: -100% !important;
+  top: 0% !important;
+}
+/* right */
+
+/* ---up--- */
+
+.animate-up-in{
+  animation-name:up-in;
+  animation-duration:0.3s;
+animation-fill-mode: forwards;
+  
+}
+@keyframes up-in{
+  from{left:0%;top:100%}to{left:0%;top:0%}
+}
+.seenup-in{
+  left: 0% !important;
+  top: 0% !important;
+}
+
+
+/*  top */
+.animate-top-in{
+  animation-name:top-in;
+  animation-duration:0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes top-in{
+  from{left:0%;top:-100%}to{left:0%;top:0%}
+}
+.seentop-in{
+  left: 0% !important;
+  top: 0% !important;
+}
+
+.animate-top-out{
+  animation-name:top-out;
+  animation-duration:0.3s;
+animation-fill-mode: forwards;
+  
+}
+@keyframes top-out{
+  from{left:0%;top:0%}to{left:0%;top:100%}
+}
+.seentop-out{
+  left: 0% !important;
+  top: 100% !important;
+}
+/* ---top--- */
+
+/* ---up--- */
+
+
+.animate-up-out{
+  animation-name:up-out;
+  animation-duration:0.3s;
+animation-fill-mode: forwards;
+  
+}
+@keyframes up-out{
+  from{left:0%;top:0%}to{left:0%;top:-100%}
+}
+.seenup-out{
+  left: 0% !important;
+  top: -100% !important;
+}
+
+#one div,#two div,#three div ,#four div,#five div,#six div{
+  opacity:0.6;
+ 
+}
+
+#one div section,#two div section,#three div section ,#four div section,#five div section,#six div section{
+    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcuAiQeLzYKId0gRLuOIwKva41hJsivRznLHWCO938K2sC01PNDA);
+    background-size: cover;
+    width:30px;
+    height:30px;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.spinner-ajax{
+  position:fixed;
+  top:40%;
+  left:50%;
+  transform:translateX(-50%);
+  width:50px;
+  height:50px;
+  background-color:transparent;
+  animation-name:rotate-spinner;
+    animation-duration:2s;
+  animation-iteration-count: infinite;
+  /*animation-direction: alternate;*/
+  animation-timing-function:linear;
+  background-image:url(https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-090_loader_loading-512.png);
+  background-size:cover;
+  
+}
+@keyframes rotate-spinner{
+  from{transform:rotateZ(0deg);}to{transform:rotateZ(360deg)}
+}
+
+
+
+
