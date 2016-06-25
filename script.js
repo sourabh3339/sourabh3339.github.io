@@ -1,6 +1,4 @@
-// Code goes here
-
-// Code goes here
+/*image request, loader-overly,dialog box open-close related page logic*/
 
 $(function() {
   /*all div ids*/
@@ -272,8 +270,8 @@ console.log('coming here');
     xhr.send();
 
   }
-var $loading = $('.spinner-ajax').hide();
-
+/*var $loading = $('.spinner-ajax').hide();*/
+  var $loading = $('#overlay-spinner').hide();
 $( "#dialog" ).dialog({
       autoOpen: false,
       width: $(window).width()* 0.8,
